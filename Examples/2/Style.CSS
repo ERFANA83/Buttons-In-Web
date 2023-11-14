@@ -1,0 +1,114 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image:url(./img1.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.panel{
+    width: 50%;
+    height: 50%;
+    background-color:transparent;
+    border: none;
+    display: flex;
+    position: absolute;
+    margin: 10% 24%;
+    border-radius: 5px;
+    outline: none;
+    animation-name: animm;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+@keyframes animm{
+    From{margin: 10% -50%;}
+    To{margin: 10% 24%; backdrop-filter: blur(40px); border: 1px solid #fff;}
+}
+.panel:hover{
+    backdrop-filter: blur(40px);
+    border: 1px solid #fff;
+}
+#btn{
+    width: 30%;
+    height: 10%;
+    background-color:orangered;
+    border: none;
+    outline: none;
+    margin: 22% 32%;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    font-style: italic;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    cursor: pointer;
+}
+@keyframes anim{
+  0%{
+    rotate: 10deg;
+    background-color: #661fff;
+}
+5%{
+    rotate: 30deg;
+}
+  10%{
+    rotate: 60deg;
+}
+15%{
+    rotate: 90deg;
+}
+  20%{
+    rotate: 120deg;
+  }
+  25%{
+    rotate: 150deg;
+  }
+  30%{
+    rotate: 180deg;
+  }
+  35%{
+    rotate: 210deg;
+  }
+  40%{
+    rotate: 240deg;
+  }
+  45%{
+    rotate: 270deg;
+  }
+  50%{
+    rotate: 300deg;
+    background-color: #0ef;
+  }
+  55%{
+    rotate: 310deg;
+  }
+  60%{
+    rotate: 320deg;
+  }
+  65%{
+    rotate: 330deg;
+  }
+  70%{
+    rotate: 340deg;
+  }
+  75%{
+    rotate: 350deg;
+  }
+  80%{
+    rotate: 355deg;
+  }
+  95%{
+    rotate: 360deg;
+  }
+  100%{
+    background-color: red;
+  }
+}
+#btn:hover{
+    background-color: #0ef;
+    font-size: 18px;
+    border: 1px solid #fff;
+}
+#btn:active{
+    background-color: red;
+}
